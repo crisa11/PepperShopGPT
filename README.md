@@ -1,4 +1,4 @@
-![Pepper Robot](test.png)
+![Pepper Robot](architecture.jpg)
 
 
 This repository documents the **Human-Robot Interaction (HRI)** system for _PepperShop_, a project that enables the Pepper robot to assist customers in a supermarket environment through personalized, multilingual, and socially intelligent interaction.
