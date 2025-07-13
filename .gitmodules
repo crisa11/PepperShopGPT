@@ -1,0 +1,9 @@
+[submodule "hri_software"]
+	path = hri_software
+	url = https://bitbucket.org/iocchi/hri_software.git
+[submodule "src/Pepper/pepper_tools"]
+	path = src/Pepper/pepper_tools
+	url = https://bitbucket.org/mtlazaro/pepper_tools.git
+[submodule "src/Pepper/modim"]
+	path = src/Pepper/modim
+	url = https://bitbucket.org/mtlazaro/modim.git

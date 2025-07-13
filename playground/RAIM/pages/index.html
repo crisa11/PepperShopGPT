@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PepperShop</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="flex_col_centered">
+        <h1>PepperShop</h1>
+    </header>
+
+    <div id="index_page" class="page">
+        <div class="flex_col_centered">
+            <!--h2 id="prp_title" style="margin: 60px 16px;"></h2-->
+            <div id="logo_product_container" class="flex_row_centered">
+                 <img src="/assets/peppershop_logo.png" class="pepper_feeedback img_pulse" style="width: 40vh" />
+
+                <div id="product_image_container" style="display: none;">
+                    <img id="product_image" class="product-image" alt="Immagine prodotto">
+                </div>
+            </div>
+            <!-- Video captured from camera of the PC/stablet -->
+            <!-- <video id="video" style="width: 40vh" autoplay></video> -->
+            <!-- Video captured from camera of the PC/stablet (getted from response) -->
+            <img id="video_back" style="width: 40vh" />
+            <br><br>
+            <label class="text_m" id="label_pepper_see">...</label>
+        </div>
+        
+    </div>
+
+    <div id="new_face_page" class="page">
+        <div class="flex_col_centered">
+            <!--h1 id="new_face_detected_title">New face detected!</h1-->
+            <br>
+            <img id="cropped_unk_face" style="width: 30vh" />
+            <br>
+
+            <img src="/assets/peppershop_logo.png" class="pepper_feeedback img_pulse" style="width: 35vh" />
+
+            <br>
+            <label class="text_m" id="cropped_unk_face_text"></label>
+        </div>
+    </div>
+
+    <div class="responsive-media">
+        <!-- Video captured from camera of the PC/stablet -->
+        <video id="video_debug" style="width: 40vh; margin-top: 20px; border-radius: 10%; margin-right: 10px; margin-bottom: 10px;" autoplay></video>
+    </div>
+    
+    <script src="/config.js" defer></script>
+    <script src="/clients/RAIMClient.js" defer></script>
+    <script src="/utils.js" defer></script>
+    <script src="/PepperFeedback.js" defer></script>
+    <script src="/clients/FaceRecognitionClient.js" defer></script>
+    <script src="/clients/PepperClient.js" defer></script>
+    <script src="/clients/CustomerInteraction.js" defer></script>
+    <script src="/index.js" defer></script>
+</body>
+
+</html>

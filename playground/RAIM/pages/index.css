@@ -1,0 +1,377 @@
+:root {
+ --primary-color: #5AB9D1;
+--accent-color: #DFB838;
+--bg-gradient: linear-gradient(135deg, #F9F9F9, #E0F7FA);
+--text-color: #333;
+}
+
+body {
+font-family: 'Inter', sans-serif;
+background: var(--bg-gradient);
+color: var(--text-color);
+transition: background 0.4s, color 0.4s;
+}
+
+header{
+font-family: Helvetica, sans-serif;
+font-size: 30px;
+margin-bottom: 0px;
+color:  #32547e;
+margin-bottom: 25px;
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+.responsive-media {
+position: absolute;
+right: 0;
+bottom: 0;
+border-color: lightblue;
+}
+
+.page {
+width: 100%;
+height: 100%;
+min-height: 100vh;
+padding: 20px;
+}
+
+.flex_row {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.flex_row_centered {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 30px; /* Space between logo and product */
+flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.flex_col {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.flex_col_centered {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: zero;
+transform: scale(1.2);
+}
+
+#languageTextDropdown {
+position: absolute;
+top: 0px;
+right: 0px;
+font-size: 22px;
+}
+
+/* Enhanced logo and product container */
+#logo_product_container {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 40px;
+padding: 20px;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(10px);
+border-radius: 20px;
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.2);
+margin: 20px auto;
+max-width: 90%;
+transition: all 0.3s ease;
+}
+
+#logo_product_container:hover {
+transform: translateY(-5px);
+box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Pepper logo styling */
+.pepper_feeedback {
+width: 35vh !important;
+max-width: 300px;
+transition: all 0.3s ease;
+filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Product image container and styling */
+#product_image_container {
+display: none; /* Hidden by default */
+position: relative;
+transition: all 0.5s ease;
+}
+
+#product_image_container.show {
+display: block;
+animation: slideInFromRight 0.6s ease-out;
+}
+
+.product-image {
+width: 35vh;
+max-width: 300px;
+height: auto;
+border-radius: 15px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+transition: all 0.3s ease;
+border: 3px solid var(--primary-color);
+}
+
+.product-image:hover {
+transform: scale(1.05);
+box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Product info overlay */
+#product_image_container::before {
+content: '';
+position: absolute;
+top: -10px;
+left: -10px;
+right: -10px;
+bottom: -10px;
+background: linear-gradient(140deg, var(--primary-color), var(red));
+border-radius: 20px;
+z-index: -1;
+opacity: 0.3;
+transition: opacity 0.3s ease;
+}
+
+#product_image_container:hover::before {
+opacity: 0.5;
+}
+
+/* Title styling */
+#prp_title {
+margin: 30px 16px;
+font-size: 1.5rem;
+font-weight: 600;
+text-align: center;
+color: var(--text-color);
+padding: 10px 20px;
+/*background: rgba(255, 255, 255, 0.8);*/
+border-radius: 15px;
+/*box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);*/
+max-width: 80%;
+}
+
+/* SELECTOR */
+select {
+background-color: #fff;
+border: none;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+color: #333;
+padding: 10px;
+width: 200px;
+outline: none;
+}
+
+select::after {
+content: "\25BC";
+color: #999;
+}
+
+select:focus {
+outline: none;
+}
+
+select option {
+outline: none;
+background-color: #fff;
+color: #333;
+font-size: 16px;
+}
+
+/* TEXT */
+.text_m {
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    color: #355a87;
+    width: 50%;
+    text-align: center; /* Allinea il testo al centro */
+    margin: 0 auto; /* Centra l'elemento stesso */
+    display: block; /* Assicura che si comporti come un elemento block */
+}
+
+/* MIC */
+.mic-container {
+display: flex;
+flex: 0 1 100%;
+justify-content: center;
+align-items: center;
+align-content: stretch;
+margin: 10px;
+}
+
+.mic-container .mic-outline {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+border: 8px solid #5ab9d1;
+animation: pulse 2s;
+animation-timing-function: ease-out;
+animation-iteration-count: infinite;
+position: absolute;
+}
+
+.mic-container .mic {
+box-sizing: border-box;
+position: relative;
+display: block;
+transform: scale(2);
+width: 16px;
+height: 12px;
+border-bottom-left-radius: 120px;
+border-bottom-right-radius: 120px;
+border: 2px solid #5ab9d1;
+border-top: 0;
+margin-top: 3px;
+color: #5ab9d1;
+}
+
+.mic-container .mic::after,
+.mic-container .mic::before {
+content: "";
+display: block;
+box-sizing: border-box;
+position: absolute
+}
+
+.mic-container .mic::after {
+border: 2px solid #5ab9d1;
+width: 8px;
+height: 18px;
+left: 2px;
+top: -10px;
+border-radius: 4px
+}
+
+.mic-container .mic::before {
+width: 10px;
+height: 4px;
+top: 12px;
+left: 1px;
+border-right: 4px solid transparent;
+box-shadow:
+0 2px 0,
+inset -2px 0 0
+}
+
+.mic-container .delayed {
+animation-delay: 1.5s;
+}
+
+@keyframes pulse {
+ 0% {
+transform: scale(0);
+opacity: 0.8;
+border: 0px solid #5ab9d1;
+ }
+ 50% {
+border: solid #46afc9;
+opacity: 0.2;
+border: 8px solid #5ab9d1;
+ }
+ 90% {
+transform: scale(2.2);
+opacity: 0.6;
+border: 3px solid #46c3e2;
+ }
+ 100% {
+transform: scale(3.3);
+opacity: 0;
+border: 0px solid #7cd3e9;
+ }
+}
+
+/* MISCELLANEOUS */
+.img_pulse {
+animation: heart-pulse 2s infinite;
+transition: width 0.5s ease-in-out;
+}
+
+@keyframes heart-pulse {
+ 0% {
+transform: scale(1);
+ }
+ 50% {
+transform: scale(1.08);
+ }
+ 100% {
+transform: scale(1);
+ }
+}
+
+/* Animations */
+@keyframes slideInFromRight {
+0% {
+opacity: 0;
+transform: translateX(50px) scale(0.8);
+}
+50% {
+opacity: 0.7;
+transform: translateX(10px) scale(0.95);
+}
+100% {
+opacity: 1;
+transform: translateX(0) scale(1);
+}
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+#logo_product_container {
+flex-direction: column;
+gap: 20px;
+padding: 5px;
+}
+
+.pepper_feeedback,
+.product-image {
+width: 30vh !important;
+max-width: 250px;
+}
+
+#prp_title {
+font-size: 1.2rem;
+margin: 20px 10px;
+}
+
+.page {
+padding: 10px;
+}
+}
+
+@media (max-width: 480px) {
+#logo_product_container {
+gap: 15px;
+/*padding: 5px;*/
+margin: 10px;
+}
+
+.pepper_feeedback,
+.product-image {
+width: 25vh !important;
+max-width: 200px;
+}
+
+#prp_title {
+font-size: 1rem;
+margin: 15px 5px;
+padding: 10px 15px;
+}
+}

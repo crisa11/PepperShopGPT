@@ -1,0 +1,353 @@
+{
+    "products": [
+        {
+            "name": "Whole Milk",
+            "image_path": "images/milk.png",
+            "overage": "False",
+            "category": "Dairy",
+            "price": 1.49,
+            "location": "Aisle 5, Shelf B2",
+            "description": "Fresh whole milk from local farms",
+            "ingredients": [
+                "pasteurized whole milk"
+            ],
+            "allergens": [
+                "milk"
+            ],             
+            "keywords": [
+                "milk",
+                "dairy",
+                "fresh"
+            ]
+        },
+        {
+            "name": "Spaghetti Pasta",
+            "image_path": "images/spaghetti.jpg",
+            "overage": "False",
+            "category": "Pasta",
+            "price": 0.89,
+            "location": "Aisle 3, Shelf A1",
+            "description": "Durum wheat pasta, perfect for all kinds of sauces",
+            "ingredients": [
+                "durum wheat semolina",
+                "water"
+            ],
+            "allergens": [
+                "gluten"
+            ],
+             
+            "keywords": [
+                "pasta",
+                "spaghetti",
+                "durum wheat"
+            ]
+        },
+        {
+            "name": "Golden Apples",
+            "image_path": "images/apples.png",
+            "overage": "False",
+            "category": "Fruit",
+            "price": 2.99,
+            "location": "Aisle 1, Fresh Fruit Shelf",
+            "description": "Sweet and crunchy seasonal apples",
+            "ingredients": [
+                "fresh golden apples"
+            ],
+            "allergens": [],
+             
+            "keywords": [
+                "apples",
+                "fruit",
+                "vegan"
+            ]
+        },
+        {
+            "name": "Whole Wheat Bread",
+            "image_path": "images/bread.png",
+            "overage": "False",
+            "category": "Bakery",
+            "price": 3.5,
+            "location": "Aisle 6, Shelf C1",
+            "description": "Freshly baked whole wheat bread",
+            "ingredients": [
+                "whole wheat flour",
+                "water",
+                "yeast",
+                "salt"
+            ],
+            "allergens": [
+                "gluten"
+            ],
+             
+            "keywords": [
+                "bread",
+                "whole wheat",
+                "bakery"
+            ]
+        },
+        {
+            "name": "Eggs",
+            "image_path": "images/eggs.png",
+            "overage": "False",
+            "category": "Eggs",
+            "price": 1.99,
+            "location": "Aisle 4, Shelf D2",
+            "description": "Fresh eggs from free-range hens",
+            "ingredients": [
+                "fresh eggs"
+            ],
+            "allergens": [
+                "eggs"
+            ],
+             
+            "keywords": [
+                "eggs",
+                "fresh",
+                "free-range"
+            ]
+        },
+        {
+            "name": "Cured Ham",
+            "image_path": "images/ham.png",
+            "overage": "False",
+            "category": "Cold Cuts",
+            "price": 4.99,
+            "location": "Aisle 7, Refrigerated Counter",
+            "description": "High-quality aged cured ham",
+            "ingredients": [
+                "pork",
+                "salt"
+            ],
+            "allergens": [],
+             
+            "keywords": [
+                "ham",
+                "cured",
+                "cold cuts"
+            ]
+        },
+        {
+            "name": "Plain Yogurt",
+            "image_path": "images/yogurt.png",
+            "overage": "False",
+            "category": "Dairy",
+            "price": 0.99,
+            "location": "Aisle 5, Shelf B4",
+            "description": "Plain natural yogurt with no added sugars",
+            "ingredients": [
+                "milk",
+                "cultures"
+            ],
+            "allergens": [
+                "milk"
+            ],
+             
+            "keywords": [
+                "yogurt",
+                "plain",
+                "natural"
+            ]
+        },
+        {
+            "name": "Smoked Salmon",
+            "image_path": "images/salmon.png",
+            "overage": "False",
+            "category": "Fish",
+            "price": 5.49,
+            "location": "Aisle 8, Refrigerated Counter",
+            "description": "High-quality smoked salmon",
+            "ingredients": [
+                "Atlantic salmon",
+                "salt",
+                "flavor enhancers"
+            ],
+            "allergens": [
+                "fish"
+            ],
+             
+            "keywords": [
+                "salmon",
+                "smoked",
+                "fish"
+            ]
+        },
+        {
+            "name": "Still Water",
+            "image_path": "images/water.png",
+            "overage": "False",
+            "category": "Beverages",
+            "price": 0.75,
+            "location": "Aisle 2, Shelf A2",
+            "description": "Still bottled water 1.5L",
+            "ingredients": [
+                "spring water"
+            ],
+            "allergens": [],
+             
+            "keywords": [
+                "water",
+                "still",
+                "beverage"
+            ]
+        },
+        {
+            "name": "Chocolate Chip Cookies",
+            "image_path": "images/cookies.jpg",
+            "overage": "False",
+            "category": "Sweets",
+            "price": 2.49,
+            "location": "Aisle 6, Shelf C3",
+            "description": "Crunchy cookies with chocolate chips",
+            "ingredients": [
+                "flour",
+                "sugar",
+                "butter",
+                "eggs",
+                "chocolate chips"
+            ],
+            "allergens": [
+                "gluten",
+                "milk",
+                "eggs"
+            ],
+             
+            "keywords": [
+                "cookies",
+                "chocolate",
+                "sweets"
+            ]
+        },
+        {
+            "name": "Tomato Sauce",
+            "image_path": "images/sauce.png",
+            "overage": "False",
+            "category": "Canned Goods",
+            "price": 1.2,
+            "location": "Aisle 10, Shelf D1",
+            "description": "Classic tomato sauce, perfect for pasta",
+            "ingredients": [
+                "tomatoes",
+                "salt",
+                "sugar",
+                "basil"
+            ],
+            "allergens": [],
+             
+            "keywords": [
+                "tomato",
+                "sauce",
+                "canned",
+                "vegan"
+            ]
+        },
+        {
+            "name": "Tuna in Olive Oil",
+            "image_path": "images/tuna.jpg",
+            "overage": "False",
+            "category": "Canned Goods",
+            "price": 3.2,
+            "location": "Aisle 10, Shelf D3",
+            "description": "High-quality tuna preserved in olive oil",
+            "ingredients": [
+                "tuna",
+                "olive oil",
+                "salt"
+            ],
+            "allergens": [
+                "fish"
+            ],
+             
+            "keywords": [
+                "tuna",
+                "olive oil",
+                "canned"
+            ]
+        },
+        {
+            "name": "Orange Juice",
+            "image_path": "images/juice.jpg",
+            "overage": "False",
+            "category": "Beverages",
+            "price": 1.8,
+            "location": "Aisle 2, Shelf B1",
+            "description": "100% orange juice with no added sugar",
+            "ingredients": [
+                "orange juice"
+            ],
+            "allergens": [],
+             
+            "keywords": [
+                "juice",
+                "orange",
+                "beverage",
+                "vegan"
+            ]
+        },
+        {
+            "name": "Potato Chips",
+            "image_path": "images/potato.jpg",
+            "overage": "False",
+            "category": "Snacks",
+            "price": 1.3,
+            "location": "Aisle 9, Shelf C2",
+            "description": "Classic salted potato chips",
+            "ingredients": [
+                "potatoes",
+                "sunflower oil",
+                "salt"
+            ],
+            "allergens": [],
+             
+            "keywords": [
+                "chips",
+                "potato",
+                "snacks",
+                "vegan"
+            ]
+        },
+        {
+            "name": "Liquid Detergent",
+            "image_path": "images/detergent.jpg",
+            "overage": "False",
+            "category": "Cleaning",
+            "price": 3.9,
+            "location": "Aisle 11, Shelf E1",
+            "description": "Liquid laundry detergent for all fabrics",
+            "ingredients": [
+                "anionic surfactants",
+                "non-ionic surfactants",
+                "enzymes"
+            ],
+            "allergens": [],
+             
+            "keywords": [
+                "detergent",
+                "cleaning",
+                "laundry"
+            ]
+        },
+        {
+            "name": "Red Wine",
+            "image_path": "images/wine.png",
+            "overage": "True",
+            "category": "Beverages",
+            "price": 12.5,
+            "location": "Aisle 2, Shelf B2",
+            "description": "Classic red wine with fruity and floral notes.",
+            "ingredients": [
+                "Sangiovese grapes",
+                "Sulphites"
+            ],
+            "allergens": [
+                "Sulphites"
+            ],
+            "keywords": [
+                "wine",
+                "red wine",
+                "beverages",
+                "alchool"
+            ]
+        }
+
+    ]
+}

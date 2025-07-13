@@ -1,1 +1,1 @@
-# PepperShopGPT
+# PepperShop
