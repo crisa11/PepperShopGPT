@@ -1,5 +1,9 @@
 ![Pepper Robot](architecture.jpg)
 
+## LM: Artificial Intelligence & Robotics - HRI - RBC project
+[Vincenzo Crisà](https://github.com/crisa11), [Stefano D'Urso](https://github.com/stefa350), [Fabrizio Italia](https://github.com/fabrizio-18)
+
+Sapienza University of Rome, Italy
 
 This repository documents the **Human-Robot Interaction (HRI)** system for _PepperShop_, a project that enables the Pepper robot to assist customers in a supermarket environment through personalized, multilingual, and socially intelligent interaction.
 
@@ -30,6 +34,31 @@ The HRI system is modular and follows a **client-server architecture**, coordina
 - **Face Recognition Module**: Identifies and manages user profiles.
 - **Customer Interaction Module**: Handles speech input and dialogue via Azure OpenAI Assistant (GPT-4.1).
 - **Web Application Module**: Multimodal user interface with voice and visual feedback.
+
+---
+
+## 🦾 Git Submodules
+
+This repository includes several Git submodules, which provide reusable components essential for the HRI system. Make sure to initialize and update them after cloning the repository:
+
+### How to initialize submodules:
+
+```bash
+git clone --recurse-submodules https://github.com/crisa11/PepperShopGPT.git
+# or, if you already cloned:
+git submodule update --init --recursive
+```
+
+### Included Submodules:
+
+* [`hri_software`](https://bitbucket.org/iocchi/hri_software.git)
+  Core libraries and utilities for human-robot interaction modules developed at Sapienza.
+
+* [`pepper_tools`](https://bitbucket.org/mtlazaro/pepper_tools.git)
+  Tools and APIs to interface with the Pepper robot.
+
+* [`modim`](https://bitbucket.org/mtlazaro/modim.git)
+  A lightweight framework for orchestrating multimodal robot behaviors including speech, gestures, and tablet animations.
 
 ---
 
